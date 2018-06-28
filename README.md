@@ -20,7 +20,7 @@ to filter the images as clean as possible and then feeds it to Tesseract.
   2. read_from_disk.py loads a picture from an image file
   3. video_from_webcam.py feeds the realtime video from the webcam (doesn't perform as expected)
 
-### Example
+## Example
 #### Edged image (canny) with dialation
 <img src="images/ger3.png" alt="Picture not availble in your browser"/>
 
@@ -36,7 +36,7 @@ to filter the images as clean as possible and then feeds it to Tesseract.
 
 <img src="images/ger1.png" alt="Picture not availble in your browser"/>
 
-### Sample results - 
+## Sample results - 
 <img src="images/pro1.png" alt="Picture not availble in your browser"/>
 <img src="images/pro2.png" alt="Picture not availble in your browser"/>
 <img src="images/pro3.png" alt="Picture not availble in your browser"/>
