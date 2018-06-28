@@ -3,7 +3,8 @@ import numpy as np
 import imutils
 import pytesseract
 
-cap = cv2.VideoCapture(1)
+# Capture from web cam
+cap = cv2.VideoCapture(0)
 
 _,image = cap.read() 
 # You can load a saved file from disk
@@ -13,7 +14,7 @@ img = cv2.GaussianBlur(img, (7,7), 0)
 
 # perform edge detection, then perform a dilation + erosion to
 # close gaps in between object edges
-edged = cv2.Canny(img, 20, 50)
+edged = cv2.Canny(img, 20, 50)# Adjust these parameters according to your image
 dilate = cv2.dilate(edged, None, iterations=1)
 # We don't perform erosion, it completely depends on the image and need
 # erode = cv2.erode(dilate, None, iterations=1)
@@ -47,12 +48,12 @@ temp = pytesseract.image_to_string(th1)
 # Write output on the image
 cv2.putText(image,temp,(50,100),cv2.FONT_HERSHEY_SIMPLEX,1.0,(0,255,255),3)
 
+# Show the results
 cv2.imshow('Original image', cv2.resize(image,(640,480)))
 cv2.imshow('Dilated', cv2.resize(dilate,(640,480)))
 cv2.imshow('New Image', cv2.resize(newimage,(640,480)))
 cv2.imshow('Inverted Threshold', cv2.resize(th1,(640,480)))
+
 cv2.waitKey(0)
-# if cv2.waitKey(1) == ord('q'):
-#     break
 cv2.destroyAllWindows()
 
