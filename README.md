@@ -23,11 +23,17 @@ to filter the images as clean as possible and then feeds it to Tesseract.
 ### Example
 #### Edged image (canny) with dialation
 <img src="images/ger3.png" alt="Picture not availble in your browser"/>
+
 #### Finding and deleting unessesary contours
+
 <img src="images/ger4.png" alt="Picture not availble in your browser"/>
+
 #### Inverted threshold image
+
 <img src="images/ger2.png" alt="Picture not availble in your browser"/>
+
 #### Results 
+
 <img src="images/ger1.png" alt="Picture not availble in your browser"/>
 
 ### Sample results - 
