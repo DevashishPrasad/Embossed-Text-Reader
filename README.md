@@ -16,8 +16,8 @@ to filter the images as clean as possible and then feeds it to Tesseract.
   imutils<br>
 
 ### There are three files - 
-1. picture_from_webcam.py clicks a single picture from webcam and performs OCR on it
-2. read_from_disk.py loads a picture from an image file
-3. video_from_webcam.py feeds the realtime video from the webcam (doesn't perform as expected)
+  1. picture_from_webcam.py clicks a single picture from webcam and performs OCR on it
+  2. read_from_disk.py loads a picture from an image file
+  3. video_from_webcam.py feeds the realtime video from the webcam (doesn't perform as expected)
 
 ### Sample pictures - 
