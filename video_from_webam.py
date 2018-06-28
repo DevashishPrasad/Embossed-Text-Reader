@@ -1,6 +1,5 @@
 import cv2
 import numpy as np
-from matplotlib import pyplot as plt
 import imutils
 import pytesseract
 
@@ -40,7 +39,9 @@ while True:
 
     # Remove ignored contours    
     newimage = cv2.bitwise_and(dilate.copy(), dilate.copy(), mask=mask)
-    img2 = cv2.dilate(newimage, None, iterations=0)
+    # Dialte agin if necessay
+    img2 = cv2.dilate(newimage, None, iterations=1)
+    # Invert threshold for better results
     ret2,th1 = cv2.threshold(img2 ,0,255,cv2.THRESH_BINARY_INV | cv2.THRESH_OTSU)
 
     # Tesseract on the filtered image
