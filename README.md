@@ -35,3 +35,6 @@ to filter the images as clean as possible and then feeds it to Tesseract.
 <img src="images/pro2.png" alt="Picture not availble in your browser"/>
 <img src="images/pro3.png" alt="Picture not availble in your browser"/>
 <img src="images/2018.png" alt="Picture not availble in your browser"/>
+
+
+The code may fail sometimes but tuning parameters of canny and appropriate dialation will improve results
