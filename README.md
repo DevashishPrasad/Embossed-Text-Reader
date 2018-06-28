@@ -9,12 +9,11 @@ tried to perform OCR on noisy and dirty images (for eg. Embossed or Engraved tex
 to filter the images as clean as possible and then feeds it to Tesseract.  
 
 ## Dependencies
-
-  Python 
-  OpenCV
-  Tesseract
-  Numpy
-  imutils
+  #### Python 
+  #### OpenCV
+  #### Tesseract
+  #### Numpy
+  #### imutils
 
 ### There are three files - 
 1. picture_from_webcam.py clicks a single picture from webcam and performs OCR on it
