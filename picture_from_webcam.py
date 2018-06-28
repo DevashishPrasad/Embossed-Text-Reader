@@ -40,7 +40,8 @@ for c in cnts:
         
 # Remove those ignored contours
 newimage = cv2.bitwise_and(dilate.copy(), dilate.copy(), mask=mask)
-# img2 = cv2.dilate(newimage, None, iterations=1)
+# Dilate again if necessary
+img2 = cv2.dilate(newimage, None, iterations=1)
 ret2,th1 = cv2.threshold(newimage,0,255,cv2.THRESH_BINARY_INV | cv2.THRESH_OTSU)
 
 # tesseract on the filtered image
