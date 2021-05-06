@@ -44,3 +44,5 @@ to filter the images as clean as possible and then feeds it to Tesseract.
 
 
 The code may fail sometimes but tuning parameters of canny and appropriate dialation will improve results
+
+### Data.zip contains all data I have used during implementation of this project
