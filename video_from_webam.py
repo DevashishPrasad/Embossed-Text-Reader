@@ -22,7 +22,7 @@ while True:
     mask = np.ones(img.shape[:2], dtype="uint8") * 255
 
     # find the contours
-    cnts = cv2.findContours(dilate.copy(), cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_SIMPLE)
+    cnts,hierarchy = cv2.findContours(edged.copy(), cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_SIMPLE)
     cnts = cnts[0] if imutils.is_cv2() else cnts[1]
 
     orig = img.copy()
